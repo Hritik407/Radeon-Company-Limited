@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radeon Company LTD</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <style>
+     .fade-in {
+    animation: fadeInUp 1s ease-in-out;
+  }
+   @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  } 
+  
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #3b3b3b;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h5 {
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  background: #000428;  /* dark gradient */
+  background: linear-gradient(to right, #004e92, #000428);
+  padding: 1rem;
+}
+.footer{
+  background: linear-gradient(to right, #004e92, #000428);
+color:#fff;
+font-weight: bold;
+}
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #00c6ff !important;
+}
+
+/* Header */
+#home {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+#home .fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #004e92;
+}
+
+/* About / Services / Portfolio / Testimonials / Contact */
+section {
+  padding: 60px 0;
+  
+}
+
+/* Services */
+.services-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.services-img:hover {
+  transform: scale(1.05);
+}
+
+/* Portfolio */
+.portfolio-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+}
+
+.portfolio-img:hover {
+  transform: scale(1.04);
+}
+
+/* Testimonials */
+blockquote {
+  background-color: #f0f4f7;
+  border-left: 5px solid #004e92;
+  padding: 20px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+/* Contact */
+#contact i {
+  font-size: 1.2rem;
+  color: #004e92;
+  transition: transform 0.3s;
+}
+
+#contact i:hover {
+  transform: scale(1.3);
+  color: #00c6ff;
+}
+
+.modal-content {
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+  background-color: #004e92;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00c6ff;
+  color: white;
+}
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home"><b>Radeon LTD</b></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Home -->
+<header id="home" class="text-center text-white d-flex align-items-center justify-content-center" style="height: 99vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/Tidel_Park.jpg') center/cover no-repeat;">
+  <div class="fade-in">
+    <h1 class="display-4" style="font-weight: bold;">Welcome to Radeon Company LTD</h1>
+    <p class="lead" style="font-weight: bold;">Securing your Bank's Network Infrastructure</p>
+  </div>
+</header>
+<!-- About -->
+<section id="about" class="bg-light fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <p class="text-center" style="font-size: 1.3rem;">Radeon Company LTD is dedicated to securing banking networks with advanced technology, robust firewalls, and real-time monitoring. We ensure smooth and safe banking operations by managing server systems and providing secure communication channels across floors and departments.</p>
+  </div>
+</section>
+<!-- Services -->
+<section id="services" class="fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <img src="img/managment.jpg" class="img-fluid services-img" alt="Management">
+        <h5>Management</h5>
+        <p>High-speed secure LAN and shared printing environment with data backup protocols.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="../img/research.jpg" class="img-fluid services-img" alt="Research">
+        <h5>Research</h5>
+        <p>Dedicated VPNs and firewall filtering to maintain research confidentiality and performance.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="../img/hr.jpg" class="img-fluid services-img" alt="HR">
+        <h5>Human Resource</h5>
+        <p>Centralized employee database management with secure role-based access control.</p>
+      </div>
+      
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="../img/marketing-image.jpg" class="img-fluid services-img" alt="Marketing">
+          <h5>Marketing</h5>
+          <p>Targeted digital campaigns and analytics to enhance customer outreach and brand visibility.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/account.jpg" class="img-fluid services-img" alt="Accounting">
+          <h5>Accounting</h5>
+          <p>Automated financial reporting and audit-ready bookkeeping with real-time monitoring.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="../img/Finance.jpg" class="img-fluid services-img" alt="Finance">
+          <h5>Finance</h5>
+          <p>Robust investment planning tools and secure fund management through encrypted systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio -->
+<section id="portfolio" class="bg-light fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">Portfolio</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="../img/nb.png" class="img-fluid portfolio-img" alt="Project 1">
+        <h5 class="mt-3">XYZ National Bank</h5>
+        <p>Network revamp with 3-layer switch architecture, firewall, and VPN setup for remote branches.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="../img/fincope.jpg" class="img-fluid portfolio-img" alt="Project 2">
+        <h5 class="mt-3">SecureFin Corp</h5>
+        <p>Integrated secure email, DHCP, and real-time monitoring system for enhanced data security.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="../img/gt.jpg" class="img-fluid portfolio-img" alt="Project 3">
+        <h5 class="mt-3">GlobalTrust Bank</h5>
+        <p>Implemented biometric-secured login systems and branch-wide fiber-optic connectivity for high-speed operations.</p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="../img/nextgen.jpg" class="img-fluid portfolio-img" alt="Project 4">
+        <h5 class="mt-3">NextGen Finance</h5>
+        <p>Cloud-integrated backup solutions with end-to-end encryption and 24/7 infrastructure support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials -->
+<section id="testimonials" class="fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">Testimonials</h2>
+    
+    <blockquote class="blockquote mb-4">
+      <p>
+        "Radeon helped us upgrade our entire network with zero downtime and maximum security.<br>
+        Their project planning was clear and well-structured from day one.<br>
+        We faced no disruptions during business hours throughout the upgrade.<br>
+        Every aspect of our infrastructure was optimized and made future-ready.<br>
+        Their team demonstrated exceptional technical expertise and coordination.<br>
+        Truly impressed by their commitment to quality and security."
+      </p>
+      <footer class="blockquote-footer">IT Head, SecureBank Ltd.</footer>
+    </blockquote>
+
+    <blockquote class="blockquote mb-4">
+      <p>
+        "Their team is very responsive and technically strong. Highly recommended for secure infra.<br>
+        We had a complex email encryption requirement which they handled seamlessly.<br>
+        Not only did they deliver ahead of schedule, but also trained our staff.<br>
+        The monitoring system they implemented catches anomalies instantly.<br>
+        We feel confident knowing our system is in safe hands.<br>
+        Reliable and professional – a top choice for any financial firm."
+      </p>
+      <footer class="blockquote-footer">CIO, TrustFinance</footer>
+    </blockquote>
+
+    <blockquote class="blockquote mb-4">
+      <p>
+        "Radeon transformed our outdated IT setup into a modern, efficient network.<br>
+        The firewall and intrusion detection systems are performing flawlessly.<br>
+        Their documentation and transparency throughout the project stood out.<br>
+        Every query was addressed promptly with actionable solutions.<br>
+        We now have peace of mind knowing our data is protected.<br>
+        Would absolutely recommend their services to others in banking."
+      </p>
+      <footer class="blockquote-footer">Network Manager, GlobalTrust Bank</footer>
+    </blockquote>
+
+    <blockquote class="blockquote mb-4">
+      <p>
+        "From consultation to implementation, Radeon exceeded our expectations at every step.<br>
+        They provided insightful suggestions during the initial design phase.<br>
+        Their team worked after hours to avoid any disruption to our operations.<br>
+        Our branch connectivity and uptime have improved drastically.<br>
+        Even post-deployment support has been outstanding.<br>
+        Definitely the best partner for critical infrastructure work."
+      </p>
+      <footer class="blockquote-footer">CTO, FinSecure Solutions</footer>
+    </blockquote>
+
+    
+
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light fade-in">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Radeon Company LTD</h5>
+        <p>123 Cyber Park, IT City, India</p>
+        <p>Phone: +91-9304100514</p>
+        <p>Email: contact@radeonltd.com</p>
+        <p>
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook me-2"></i></a>
+          <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter me-2"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="data:image/jpeg;base64,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" class="img-fluid rounded" alt="Contact Image">
+      </div>
+      <!-- Add this inside your Contact section, below the company info or image -->
+<div class="text-center mt-3">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#queryModal">
+    Send a Query
+  </button>
+</div>
+
+      <!-- Query Form Modal -->
+<div class="modal fade" id="queryModal" tabindex="-1" aria-labelledby="queryModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form action="https://formsubmit.co/shailjad719@gmail.com" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title" id="queryModalLabel">Send Your Query</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" name="Name" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" name="Email" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="mobile" class="form-label">Mobile</label>
+            <input type="tel" class="form-control" name="Mobile" id="mobile" required>
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" class="form-control" name="Location" id="location">
+          </div>
+          <div class="mb-3">
+            <label for="query" class="form-label">Your Query</label>
+            <textarea class="form-control" name="Query" id="query" rows="3" required></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Submit Query</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+ <div class="footer">
+<footer class="text-center py-3">
+  <p>&copy; 2025 Radeon Company LTD. All Rights Reserved. Devloped by Hritik Kumar Pandey.🤍🤍</p>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
